@@ -1,0 +1,2149 @@
+          ZM2371/ZM2372/ZM2376
+            Application Software
+
+
+
+
+         Instruction Manual
+
+
+
+
+NF Corporation
+DA00026022-005
+
+
+
+
+                 ZM2371/ZM2372/ZM2376
+                   Application Software
+
+
+
+
+                 Instruction Manual
+Registered Trademarks
+ National Instruments is a trademark of National Instruments Corporation.
+ Microsoft is a registered trademark of Microsoft Corporation.
+ Windows is a registered trademark of Microsoft Corporation.
+ Excel is a registered trademark of Microsoft Corporation.
+ Adobe and Acrobat are trademarks of Adobe System, Inc.
+ Other company or product names are generally trademarks or registered
+ trademarks of the company to which each relates.
+                            ──── Preface ────
+Thank you very much for purchasing our “ZM2371/ZM2372/ZM2376 LCR METER”. To
+ensure safe use of this product, please read first “Safety Precautions” on the following
+pages.
+
+ Before Reading This Manual
+  This manual is intended for users with knowledge for basic operation of the operating
+  system (OS) (Microsoft Windows) to be used. For basic operation of the Windows OS or
+  definitions of terms such as “click’’ and “drag’’, see the user’s guide of the Windows OS.
+
+ Caution Symbols Used in This Manual
+  The following caution symbols are used in this manual. Be sure to observe these caution
+  symbols and their contens.
+
+          CAUTION
+   This mark indicates cautions on handling of this program.
+
+
+
+   This manual has the following chapter organization.
+     If you use the product for the first time, read this manual, starting from “1. OVERVIEW”
+     (page.1-0).
+
+  1. OVERVIEW
+         Describes the general of product functions.
+
+  2. INSTALLATION
+         Describes the environment necessary for the operations and how to install/uninstall
+         the application software.
+
+  3. DISPLAY AND SETTING
+         Describes the screen display and how to make various settings.
+
+  4. OPERATION
+         Describes how to perform various measurement operations.
+
+  5. LIST OF SETTING TABLES
+         Gives various information tables.
+
+  6. USER MESSAGES
+         Describes error specifications.
+
+  7. MAINTENANCE
+         Describes how to cheack version
+
+
+
+
+                                                i           ZM2371/ZM2372/ZM2376
+                   ──── Safety Precautions ────
+
+To ensure safe use, be sure to observe the following warnings and cautions.
+NF Corporation shall not be held liable for damages that arise from a failure to observe these
+warnings and cautions.
+
+
+ Be sure to observe the contents of instruction manual.
+   This instruction manual contains information for the safe operation and use of this product.
+   Be sure to read this information first before using this product.
+   All the warnings in the instruction manual must be heeded to prevent hazards that may
+   cause major accidents.
+
+
+ In case of suspected anomaly
+   If the product controlled by this editor emits smoke, an abnormal smell, or abnormal noise,
+   immediately power it off and stop using it.
+   If such an abnormal occurs, prevent anyone from using this product until it has been
+   repaired, and immediately report the problem to NF Corpporation or one of our
+   representatives.
+
+
+
+
+                                                 ii        ZM2371/ZM2372/ZM2376
+                ──── Disclaimer ────
+The “ZM2371/ZM2372/ZM2376 Application Software’’ (hereinafter, “ZM237x Application
+Software or this software’’) was shipped after having undergone full testing and inspection
+by the NF Corporation.
+
+Should this product fail due to a manufacturing flaw or due to a mishap during shipping,
+contact NF Corporation or one of our representatives.
+
+NF Corporation takes no responsibility for any damage caused by use of this software.
+In addition, we assume no obligation to modify the software or provide support if this
+software contains flaws. Please use this software under your responsibility.
+
+
+
+                         ──── COPYRIGHT ────
+
+NF Corporation retains the copyright of this software, which is protected under the copyright
+law of Japan and related international conventions.
+
+You may either make one copy of this software for backup or storage purposes only, or install
+it onto a hard disk while keeping the original of this software for backup or storage purposes
+only.
+
+Reproduction of this instruction manual without permission, either in part or in whole, is
+prohibited.
+
+
+
+                     ──── ABOUT CONTACT ────
+
+If a problem occurs or if you have questions, contact NF Corporation or one of our
+representatives where you purchased this product.
+
+When contacting NF Corporation or one of our representatives, provide the model name (or
+product name), version number, and information as detailed as possible about the nature of
+the problem, conditions of use, etc.
+
+
+
+
+                                               iii
+Contents
+
+
+                                                         Contents
+
+Preface ........................................................................................................... i
+Safety Precautions ......................................................................................... ii
+Disclaimer ...................................................................................................... iii
+1. OVERVIEW ................................................................................................ 1-0
+    1.1 General ...................................................................................................................... 1-1
+    1.2 Software Configuration ............................................................................................... 1-2
+    1.3 Measurement Status ................................................................................................... 1-3
+    1.4 Log Output to Microsoft Excel File.............................................................................. 1-4
+    1.5 Conventions ............................................................................................................... 1-5
+
+2. INSTALLATION .......................................................................................... 2-0
+    2.1 System Requirements ................................................................................................ 2-1
+        2.1.1     Personal computer ............................................................................................. 2-1
+        2.1.2     Software component ........................................................................................... 2-1
+    2.2 Installation Procedure................................................................................................. 2-2
+        2.2.1     Installing USB driver software ............................................................................ 2-2
+        2.2.2     ZM237x application software .............................................................................. 2-5
+        2.2.3     Uninstalling ZM237x application software ........................................................... 2-5
+
+3. DISPLAY AND SETTING ............................................................................ 3-0
+    3.1 Start and Exit of Program ........................................................................................... 3-1
+        3.1.1     Start .................................................................................................................... 3-1
+        3.1.2     Exit ..................................................................................................................... 3-1
+    3.2 Main Screen Structure ................................................................................................ 3-2
+    3.3 Menu Bar .................................................................................................................... 3-3
+    3.4 Measurement Result Display Section ......................................................................... 3-4
+        3.4.1     Measurement result display ................................................................................ 3-4
+        3.4.2     Measurement status display ............................................................................... 3-5
+    3.5 Measurement Setting Section .................................................................................... 3-6
+        3.5.1     Display ............................................................................................................... 3-6
+        3.5.2     Measurement ...................................................................................................... 3-7
+        3.5.3     Spot .................................................................................................................... 3-9
+        3.5.4     Sweep .............................................................................................................. 3-10
+        3.5.5     Parameter input limitation ................................................................................. 3-11
+    3.6 Operation Button Section ......................................................................................... 3-12
+        3.6.1     Measurement operations .................................................................................. 3-12
+        3.6.2     Measurement setting operations....................................................................... 3-12
+        3.6.3     Option ............................................................................................................... 3-12
+
+
+
+                                                                      iv                  ZM2371/ZM2372/ZM2376
+                                                                                                                              Contents
+
+    3.7 Status Bar................................................................................................................. 3-13
+    3.8 Functional Limitations According to Measurement Status ......................................... 3-14
+
+4. OPERATION .............................................................................................. 4-0
+    4.1 Spot Measurement ..................................................................................................... 4-1
+        4.1.1     Start operation .................................................................................................... 4-1
+        4.1.2     Stop operation .................................................................................................... 4-1
+        4.1.3     Log output .......................................................................................................... 4-2
+        4.1.4     Log file format .................................................................................................... 4-3
+    4.2 Sweep Measurement .................................................................................................. 4-4
+        4.2.1     Start operation .................................................................................................... 4-4
+        4.2.2     Stop operation .................................................................................................... 4-4
+        4.2.3     Pause operation ................................................................................................. 4-4
+        4.2.4     Log output .......................................................................................................... 4-4
+        4.2.5     Log file format .................................................................................................... 4-5
+    4.3 Initialization ................................................................................................................ 4-6
+    4.4 Upload ........................................................................................................................ 4-7
+    4.5 Download ................................................................................................................... 4-8
+    4.6 Sending Macro ........................................................................................................... 4-9
+        4.6.1     Operation ............................................................................................................ 4-9
+        4.6.2     File format ........................................................................................................ 4-10
+    4.7 Operation Stop Due to Drive Error or Communication Error ..................................... 4-11
+        4.7.1     Error due to unmeasurable status of device ..................................................... 4-11
+        4.7.2     Error due to faulty communication with device ................................................. 4-11
+    4.8 Parameter Setting File.............................................................................................. 4-12
+        4.8.1     Reading a file ................................................................................................... 4-12
+        4.8.2     Saving a file ...................................................................................................... 4-12
+    4.9 Configuration ............................................................................................................ 4-13
+        4.9.1     Communication setting ..................................................................................... 4-13
+        4.9.2     Log output ........................................................................................................ 4-14
+
+5. LIST OF SETTING TABLES ....................................................................... 5-0
+    5.1 Initial Setting Value List .............................................................................................. 5-1
+    5.2 List of Input Limited Values ........................................................................................ 5-2
+    5.3 SI Prefix List ............................................................................................................... 5-2
+
+6. USER MESSAGES..................................................................................... 6-0
+    6.1 Guidance Messages ................................................................................................... 6-1
+    6.2 Error Messages .......................................................................................................... 6-2
+
+7. MAINTENANCE ......................................................................................... 7-0
+    7.1 Version Check ............................................................................................................ 7-1
+
+
+
+
+                                                                     v
+Contents
+
+
+
+
+                                   Figures and Tables
+                                                                                                              Page
+Figure 3-1 Exit confirmation screen ............................................................... 3-1
+Figure 3-2 Screen structure .......................................................................... 3-2
+Figure 3-3 Menu bar ..................................................................................... 3-3
+Figure 3-4 Measurement result display ......................................................... 3-4
+Figure 3-5 Measurement status display......................................................... 3-5
+Figure 3-6 Display ......................................................................................... 3-6
+Figure 3-7 Measurement ............................................................................... 3-7
+Figure 3-8 Spot ............................................................................................. 3-9
+Figure 3-9 Sweep........................................................................................ 3-10
+Figure 3-10 Parameter input range warning display .................................... 3-11
+Figure 3-11 Operation button section .......................................................... 3-12
+Figure 3-12 Status bar ................................................................................. 3-13
+Figure 4-1 Sending Macro screen ................................................................. 4-9
+Figure 4-2 Macro file description example ................................................... 4-10
+Figure 4-3 Warning display due to unmeasurable status of device .............. 4-11
+Figure 4-4 Warning display due to faulty communication with device .......... 4-11
+Figure 4-5 Warning display when file reading failed .................................... 4-12
+Figure 4-6 Warning display when file saving failed ...................................... 4-12
+Figure 4-7 Configuration screen (Communication setting tab) ..................... 4-13
+Figure 4-8 Configuration screen (Log output tab) ........................................ 4-14
+Figure 7-1 Version Dialog Box ...................................................................... 7-1
+
+
+
+Table 3-1      Description of measurement status ................................................ 3-5
+Table 3-2      Functional limitations according to measurement status ............... 3-14
+Table 4-1      Spot measurement log file format ................................................... 4-3
+Table 4-2      Sweep measurement log file format ............................................... 4-5
+Table 5-1      Initial Setting Value List .................................................................. 5-1
+Table 5-2      List of Input Limited Values ............................................................ 5-2
+Table 5-3      SI Prefix List ................................................................................... 5-3
+Table 6-1      Guidance Messages ....................................................................... 6-1
+Table 6-2      Error Messages .............................................................................. 6-2
+
+
+
+
+                                                         vi              ZM2371/ZM2372/ZM2376
+      1. OVERVIEW
+
+
+1.1   General .......................................................................... 1-1
+1.2   Software Configuration .................................................. 1-2
+1.3   Measurement Status ...................................................... 1-3
+1.4   Log Output to Microsoft Excel File ................................. 1-4
+1.5   Conventions ................................................................... 1-5
+
+
+
+
+                       1-0                ZM2371/ZM2372/ZM2376
+                                          1.1 General
+
+
+
+1.1 General
+The “ZM237x Application Software” supports the remote control of the LCR Meter
+ZM2371 / ZM2372 / ZM2376.
+It runs on the Windows OS of personal computer (PC), and it sets and acquires various
+parameters and controls measurement with respect to the LCR Meter ZM2371 / ZM2372 /
+ZM2376 via USB.
+Its main functions are as listed below:
+
+
+ Sets and acquires measurement parameters
+ Controls measurement and acquires measurement result
+ Sends macro
+ Outputs the acquired measurement result to a file
+
+
+
+        CAUTION
+
+ The Operation mode 1 is not supported in the ZM2376. Please,
+ select the operation mode 0.
+
+
+
+
+                                              1-1
+                                1.2 Software Configuration
+
+
+
+1.2 Software Configuration
+The “ZM237x Application Software” runs as a single application software, and it can start
+from the start program menu or desktop icon created after installation.
+
+
+The environmental setting information set by the application is managed with the system
+setting information file in the application data folder.
+
+
+
+
+                                              1-2          ZM2371/ZM2372/ZM2376
+                                 1.3 Measurement Status
+
+
+
+1.3 Measurement Status
+For the “ZM237x Application Software”, the measurement status varies when various
+operations are executed.
+
+
+ Stand-by                 Communication with device is not executed.
+ SpotMeasuring            Spot measurement is being executed.
+ SweepMeasuring           Sweep measurement is being executed.
+ MacroProc                User-described macro command is being sent.
+ Uploading                Various settings are being made to the device.
+ Downloading              Various settings are being received from the device.
+ Pausing                  Measurement is paused.
+
+
+Fundamentally, when the operation that communicates with ZM237x device is under way,
+other operations are limited.
+For operational limitations in the measurement status, see “3.8 Functional Limitations
+According to Measurement Status” (p3-14).
+
+
+
+
+                                             1-3
+                            1.4 Log Output to Microsoft Excel File
+
+
+
+1.4 Log Output to Microsoft Excel File
+The “ZM237x Application Software” cannot create a new file to which log data are output.
+To use this function, prepare the file in advance, or use the “Sample Template.xls” supplied
+along with this software.
+
+
+To use the log output function in the “xls” format, the Microsoft Excel 2007 or later versions
+must be installed in your PC.
+
+
+
+
+                                              1-4          ZM2371/ZM2372/ZM2376
+                                        1.5 Conventions
+
+
+
+1.5 Conventions
+This manual uses the following conventions:
+
+
+ Menu names displayed on the screen, user input strings, and other elements: block
+  letters enclosed by square brackts ([ , ]).
+      Examples: [File (F)], [12.3456]
+
+ Button names displayed on the screen user’s key operations, and other elements: block
+  letters enclosed by a box (   ).
+      Examples: Cancel , OK , Alt.
+
+ Strings and other elements expressing each function or item of this software : block
+  letters enclosed by double quotation mark (“ ”).
+      Example: “Display”, “Send Macro”, “Setting File”
+
+ Press one key while holding down another key → Two keys are connected by a plus (+)
+  symbol.
+      Example: Ctrl + O.
+
+ Press one key, release it and after press another key → Two keys are divided a comma ( , ).
+      Example: Alt , F.
+
+
+
+
+                                                1-5
+2. INSTALLATION
+
+
+2.1 System Requirements .................................................... 2-1
+   2.1.1 Personal computer .................................................. 2-1
+   2.1.2 Software component ................................................ 2-1
+2.2 Installation Procedure ..................................................... 2-2
+   2.2.1 Installing the USB driver software ........................... 2-2
+   2.2.2 ZM237x application software ................................... 2-5
+   2.2.3 Uninstalling ZM237x application software ............... 2-5
+
+
+
+
+                       2-0              ZM2371/ZM2372/ZM2376
+                                2.1 System Requirements
+
+
+
+2.1 System Requirements
+Before installing this software, check that the system satisfies all the requirements below.
+
+2.1.1 Personal computer
+ Free hard disk space             64 MB or more
+ Display:                         800 × 600 pixels or higher and High Color(16bit) or more
+ OS：                              Windows 7(32bit/64bit)/ Windows 8.1 (32bit/64bit)/
+                                   Windows 10 (32bit/64bit)
+ Disk drive:                      CD-ROM drive
+ Communication interface:         USB
+
+The company and product names are trademarks or registered trademarks of their
+respective owners.
+
+
+        CAUTION
+  The CD-ROM drive is required only when the software is installed.
+
+
+2.1.2 Software component
+ Microsoft .NET Framework 4.0
+
+The company and product names are trademarks or registered trademarks of their
+respective owners.
+
+
+
+
+                                            2-1
+                                2.2 Installation Procedure
+
+
+
+2.2 Installation Procedure
+ For installing or uninstalling the software, log on to the Windows as a user having
+ administrative privilege.
+
+
+2.2.1 Installing the USB driver software
+ For users who do not have VISA environment (Windows 7 only).
+
+ For communication with the ZM2371/ZM2372/ZM2376, the USB driver must be installed.
+ The USB driver can be used in Windows 7 only. The USB driver is not tested in Windows
+ 8.1 and Windows 10. Thanks in advance.
+
+
+ [Setup procedure]
+
+    (a) Insert the CD-ROM into the CD-ROM drive of the PC.
+
+    (b) Execute [English\Application\Driver\x86\Setup.EXE] on the CD-ROM.
+        If using Windows 7(64bit), execute [English\Application\Driver\x64\Setup.EXE].
+
+    (c) Click the Next button, following the screen guidance to start installation.
+        A waning message by Windows security will be displayed, but select [Install this
+        driver software] to continue installation.
+
+    (d) Upon completion of setup program, connect the device to the personal computer, and
+        power on the device.
+        The Windows will recognize device automatically and the driver will be set up.
+
+
+
+
+                                             2-2          ZM2371/ZM2372/ZM2376
+                              2.2 Installation Procedure
+
+
+
+
+[Note]
+The installed USB driver runs with the ZM2371/ZM2372/ZM2376 only.
+It is not compatible with the VISA environment. If you communicate with other devices in
+the VISA environment, use the software in the VISA environment.
+
+
+VISA (Virtual Instrument Software Architecture) is the standard recommended by VXI plug
+& play System Alliance that promotes the standardization of instrument software
+architecture.
+
+
+
+
+                                           2-3
+                               2.2 Installation Procedure
+
+
+
+
+For users who have already been using VISA environment.
+
+
+This software can be used in the VISA environment if the VISA environment has been
+established in the user’s personal computer.
+Select [VISA] for the setting in “4.9 Configuration, 4.9.1 Communication setting, b) Driver
+type”.
+
+
+The operation of this software in VISA environment has been checked with the NI-VISA of
+National Instruments Corporation.
+    Operation check version: NI-VISA version 16.0
+
+
+Please note that operation troubles in other vendors’ VISA environment may be attributable
+to user’s own problem.
+
+
+To use this software in the NI-VISA environment, the user has to acquire the license from
+National Instruments Corporation.
+
+
+For the NI-VISA, make an inquiry to National Instruments Corporation.
+The information on National Instruments Corporation and NI-VISA can be got at the Web
+site of http://www.ni.com/.
+
+
+
+
+                                               2-4       ZM2371/ZM2372/ZM2376
+                                 2.2 Installation Procedure
+
+
+
+2.2.2 ZM237x application software
+(a) Insert the CD-ROM into the CD-ROM drive of the PC.
+
+
+(b) Execute [English\Application\Setup.EXE] on the CD-ROM or
+    [D:\English\Application\Setup.EXE] from [Run] on the start menu.
+    [D:] indicates the CD-ROM drive. If another drive letter is assigned to the CD-ROM
+    driver, assign it appropriately, according to your system.
+
+(c) Click the Next button, following the screen guidance to start installation.
+
+
+(d) When installation has been completed this software can be executed.
+    Click [ZM237x Application] from Start – [All Programs] – [NF] – [ZM] – [ZM237x] to
+    execute the software.
+
+
+
+2.2.3 Uninstalling ZM237x application software
+Start [Add or Remove Programs] on the control panel, and select “NF ZM237x Application
+Software” and then click Change/Remove button to delete this software.
+Not that the folder in which the this software was installed may not be removed in some case.
+All the files created in the folder remains as they are. If the holder is unnecessary, delete it
+after uninstsllation.
+
+
+
+
+                                              2-5
+3. DISPLAY AND SETTING
+
+
+   3.1 Start and Exit of Program ............................................... 3-1
+      3.1.1 Start ......................................................................... 3-1
+      3.1.2 Exit .......................................................................... 3-1
+   3.2 Main Screen Structure .................................................... 3-2
+   3.3 Menu Bar ........................................................................ 3-3
+   3.4 Measurement Result Display Section ............................. 3-4
+      3.4.1 Measurement result display ..................................... 3-4
+      3.4.2 Measurement status display .................................... 3-5
+   3.5 Measurement Setting Section ......................................... 3-6
+      3.5.1 Display ..................................................................... 3-6
+      3.5.2 Measurement ........................................................... 3-7
+      3.5.3 Spot ......................................................................... 3-9
+      3.5.4 Sweep .................................................................... 3-10
+      3.5.5 Parameter input limitation ....................................... 3-11
+   3.6 Operation Button Section .............................................. 3-12
+      3.6.1 Measurement operations ....................................... 3-12
+      3.6.2 Measurement setting operations ........................... 3-12
+      3.6.3 Option .................................................................... 3-12
+   3.7 Status Bar ..................................................................... 3-13
+   3.8 Functional Limitations According to
+        Measurement Status ..................................................... 3-14
+
+
+
+
+                            3-0                ZM2371/ZM2372/ZM2376
+                                3.1 Start and Exit of Program
+
+
+
+3.1 Start and Exit of Program
+
+3.1.1 Start
+ To start this software, double-click the shortcut icon for ZM237x application software
+ created automatically on the desktop, or select Start →     All Programs → NF → ZM →
+ ZM237x → ZM237x Application .
+
+
+
+3.1.2 Exit
+ To exit this software, click the   button at the upper right of this software screen, or press
+ the Alt + F4 keys. Or, execute the menu [File (F)] – [Exit (X)] ( Ctrl + X or Alt , F , X ).
+ If executed, the following screen (Figure 3-1 Exit confirmation screen) will appear, and then
+ select Yes to exit, or No to cancel.
+
+
+
+
+                            Figure 3-1 Exit confirmation screen
+
+
+
+
+                                              3-1
+                                3.2 Main Screen Structure
+
+
+
+3.2 Main Screen Structure
+This section describes the outline of main screen structure of this software.
+The software name and the file name in or from which this software was saved or read are
+displayed on the title bar. “Untitled” is displayed in the file name display field when file
+operation is not performed immediately after start.
+
+
+
+
+                               Figure 3-2 Screen structure
+
+ a) Menu bar
+         See “3.3 Menu Bar” (p.3-3)
+
+ b) Measurement result display section
+         See “3.4 Measurement Result Display Section” (p.3-4)
+
+ c) Measurement setting section
+         See “3.5 Measurement Setting Section” (p.3-6)
+
+ d) Operation button section
+         See “3.6 Operation Button Section” (p.3-12)
+
+ e) Status bar
+         See “3.7 Status Bar” (p.3-13)
+
+
+
+
+                                             3-2           ZM2371/ZM2372/ZM2376
+                                         3.3 Menu Bar
+
+
+
+3.3 Menu Bar
+
+   File              Open                    Ctrl+O     Opens the setting file
+                                                        設定ファイルを開きます
+
+                     Save                    Ctrl+S     Saves data, overwriting the setting file
+                                                        設定ファイル上書き保存します
+
+                     Save As                            Saves data in the setting file with a name
+                                                        設定ファイルに名前を付けて保存します
+
+                     Exit                    Ctrl+X     Exits this software
+                                                        本ソフトウェアを終了します
+
+
+
+   Operation         Start                              Starts the measurement
+                                                        測定を開始します
+
+                     Stop                               Stops the measurement
+                                                        測定を停止します
+
+                     Pause                              Pauses the measurement
+                                                        測定を一時停止します
+
+                     Send Macro                         Sends a macro
+                                                        マクロ送信を行います
+
+                     Initialization                     Initializes
+                                                         機器の初期化を行いますthe device
+
+                     Upload                             Uploads various settings to the device
+                                                        機器に各種設定をアップロードします
+
+                     Download                           Downloads various settings from the device
+                                                        機器から各種設定をダウンロードします
+
+
+
+   View              Display setting                    Displays the “Display” tab
+                                                        表示条件タブを表示します
+
+                     Measurement setting                Displays the “Measurement” tab
+                                                        測定条件タブを表示します
+
+                     Spot measurement                   Displays the “Spot” tab
+                                                        スポット測定タブを表示します
+
+                     Sweep measurement                  Displays the “Sweep” tab
+                                                        スイープ測定タブを表示します
+
+
+
+   Setting           Configuration                      Displays the Configuration screen
+                                                        環境設定画面を表示します
+
+
+
+
+   Help              Version Information                Displays the Version Information screen
+                                                        バージョン情報画面を表示します
+
+                                      Figure 3-3 Menu bar
+
+
+Each item of menu bar is switched between enable and disable according to the
+[Measurement status] of this software.
+For details, see “3.8 Functional Limitations According to Measurement Status” (p.3-14).
+
+
+
+
+                                              3-3
+                        3.4 Measurement Result Display Section
+
+
+
+3.4 Measurement Result Display Section
+
+3.4.1 Measurement result display
+In the measurement result display field, the latest measurement result information during
+the measurement is displayed.
+
+
+
+
+                        Figure 3-4 Measurement result display
+
+ a) Frequency
+     The frequency used for the latest measurement is displayed.
+     In the sweep measurement, the measurement is executed while the frequency is varied,
+     and therefore the frequency value varies every measurement.
+
+ b) Primary parameter
+     The primary parameter being measured is displayed.
+     In the upper area, the item name of primary parameter being measured is displayed.
+     In this text area, the user can enter arbitrary character string. Also, if the type of
+     primary parameter is changed in “3.5.1 Display” (p.3-6), appropriate parameter item
+     name is entered automatically.
+     In the lower area, the latest measurement result of primary parameter is displayed.
+
+ c) Secondary parameter
+     The secondary parameter being measured is displayed.
+     In the upper area, the item name of secondary parameter being measured is displayed.
+     In this text area, the user can enter arbitrary character string. Also, if the type of
+     secondary parameter is changed in “3.5.1 Display” (p.3-6), appropriate parameter item
+     name is entered automatically.
+     In the lower area, the latest measurement result of secondary parameter is displayed.
+
+These parameters are updated only during measurement, and after the measurement
+finished, the latest measurement result is kept displayed. For various measurements, see “4.
+Operation” (p.4-0).
+
+
+
+
+                                             3-4           ZM2371/ZM2372/ZM2376
+                          3.4 Measurement Result Display Section
+
+
+
+3.4.2 Measurement status display
+In the measurement status display field, various statuses during measurement or in
+stand-by state are displayed.
+
+
+
+
+                        Figure 3-5 Measurement status display
+
+
+ a) Elapsed time
+     The elapsed time since the measurement started and the measurement count are
+     displayed.
+     The elapsed time is displayed in the format of hour:minute:second (hh:mm:ss.sss), and
+     the measurement count is displayed in the format of measurement count/total
+     measurement count.
+
+ b) Measurement status
+     Current measurement status is displayed. The measurement status varies as listed
+     below.
+
+
+                      Table 3-1 Description of measurement status
+          Measurement status       Description
+          Stand-by                 Device stands by for various operations.
+          Pausing                  Various operations are paused.
+          SpotMeasuring            Spot measurement is under way.
+          SweepMeasuring           Sweep measurement is under way.
+          Uploading                Setting to the device is under way.
+          Downloading              Acquisition of settings from device is under way.
+          MacroProc                Macro send is under way.
+
+
+     During communication with various devices, the operation that includes a change in
+     measurement setting is disabled.
+     For the operational limitations, see “3.8 Functional Limitations According to
+     Measurement Status” (p.3-14).
+
+ c) Connected device
+     The model name and its serial number connected for measurement or setting are
+     displayed.
+     After checking that the device used for measurement is displayed, perform various
+     operations.
+
+
+
+
+                                              3-5
+                            3.5 Measurement Setting Section
+
+
+
+3.5 Measurement Setting Section
+3.5.1 Display
+With the display, set the primary and secondary parameters displayed in “3.4 Measurement
+Result Display Section” (p.3-4).
+For details of parameters, see the instruction manual of the device.
+
+
+
+
+                                   Figure 3-6 Display
+
+
+ a) Type
+     Select the type of primary/secondary parameter. If the type is changed, the parameter
+     item name in “3.4.1 Measurement result display” (p.3-4) is changed to the selected
+     parameter item name.
+
+ b) Deviation display
+     Select the deviation display format when measurement is executed with the
+     primary/secondary parameter.
+       ABS       Measured value is displayed as it is. (Default)
+       DEV       Deviation from reference value is displayed.
+                 Deviation = Measured value – Referenced value
+       PCNT      Deviation is displayed in percent to the reference value.
+                 Deviation % = ((Measured value – Referenced value) / Referenced value) × 100
+
+ c) Deviation reference value
+     Set reference value when the deviation is displayed in primary/secondary parameter.
+     The unit of reference value is interpreted according to the parameter (ex. Z → Ω).
+
+ d) Remarks
+     Up to 100 characters can be described as a user’s own memo in remarks field. Note that
+     a comma “,” and line feed (CRLF) can be used in a character string, but they are output
+     as they are in the log output file in the CSV format.
+
+
+
+                                            3-6              ZM2371/ZM2372/ZM2376
+                             3.5 Measurement Setting Section
+
+
+3.5.2 Measurement
+With the measurement, set various parameters used for actual measurement.
+For details of parameters, see the instruction manual of the device.
+
+
+
+
+                                Figure 3-7 Measurement
+
+
+ a) Frequency
+     Set the frequency used for measurement.
+     Enter a numeric value in the text area and from the combo box on the right side, select
+     the desired SI prefix, so that you can set a multiplier for the entered numeric value.
+     For the input of frequency, “3.5.5 Parameter input limitation” (p.3-11) is applied.
+
+ b) Voltage level
+     Set the measurement voltage level. The measurement voltage level can be set with the
+     resolution 10mV (voltage level ≧1V) or 1mV (voltage level ＜1V).
+     For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+     limitation” (p.3-11).
+
+ c) ALC
+     Set the automatic level control and a drive system.
+     When the DUT is driven with constant voltage or current, set the ALC function to ON
+     (constant voltage (CV) or constant current (CC)). When specifying the constant voltage
+     (CV) or constant current (CC), set or check the voltage or current value in advance.
+
+ d) Constant current level
+     Set the measurement current level when the DUT is driven with constant current.
+     For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+     limitation” (p.3-11).
+
+
+
+
+                                            3-7
+                              3.5 Measurement Setting Section
+
+
+
+e) Auto ranging
+     By checking or unchecking the “Auto ranging” checkbox, set auto ranging (check) or
+     hold (uncheck) of the measurement range.
+
+f)   Masurement range
+     When “Range Auto ranging” is held (uncheck), the measurement range can be set
+     manually. When the measurement range is held, select a range so as to measure the
+     DUT within the recommended range as closely as possible, considering the variations
+     of DUT.
+
+g) Trigger source
+     Set the trigger source by selecting one of sources given in the combo box. Select either
+     of the following trigger sources used for the measurement:
+       Internal     Internal trigger. Trigger is applied automatically at the completion of
+                    measurement to execute measurement continuously. Other trigger
+                    signals are ignored.
+       Manual       Manual trigger. Trigger can be applied by pressing the TRIG key on the
+                    front panel.
+       External     External trigger. Trigger is applied by TRIG signal of handler interface.
+       Bus          Trigger is applied by remote control. See description of ∗TRG and GET.
+
+h) Trigger delay time
+     The trigger delay time is the time from trigger up to signal acquisition start. The signal
+     settling time varies depending on the nature of DUT or required accuracy. Set long
+     trigger delay time to the extent that the measured value does not change even if the
+     trigger delay time is varied a little.
+     For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+     limitation” (p.3-11).
+
+i)   Measurement speed
+     Set the measurement speed by selecting one of speeds given in the combo box.
+
+j)   DC bias
+     Set the DC bias output ON (DC-biased voltage is effective) or output OFF (0V).
+     To disable the DC bias setting, uncheck the checkbox.
+     When the DC bias setting is enabled, set the DC bias voltage with the resolution 0.01V.
+     For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+     limitation” (p.3-11).
+
+k) Averaging count
+     To enable the averaging, check the checkbox, or to disable the averaging, uncheck the
+     checkbox. When the measured value varies due to noise, the averaging function can
+     reduce the variations.
+     Setting a large value to the averaging count causes a long time to be taken for one
+     measurement. For the out-of-range input, warning is displayed as described in “3.5.5
+     Parameter input limitation” (p.3-11).
+
+
+
+
+                                              3-8          ZM2371/ZM2372/ZM2376
+                             3.5 Measurement Setting Section
+
+
+
+3.5.3 Spot
+With the spot, set the parameters necessary for the spot measurement.
+         See “4.1 Spot Measurement” (p.4-1)
+
+
+
+
+                                    Figure 3-8 Spot
+
+
+ a) Repeat count
+    Set how many times the measurement is repeated.
+    For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+     limitation” (p.3-11).
+
+ b) Interval
+    Set the interval (wait interval) between measurements when the measurement is
+    executed by the amount of specified repeat count.
+    For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+    limitation” (p.3-11).
+
+ c) Log setting
+    To output the measurement result to a log file, check the “Log output” checkbox and set
+    the log output format.
+    If the “Log output” checkbox is unchecked (disabled), the log output function of
+    measurement result is disabled.
+    For the log output function of measurement result, see “4.1.3 Log output” (p.4-2).
+
+ d) Remarks
+    Up to 100 characters can be described as a user’s own memo in remarks field. Note that
+    a comma “,” and line feed (CRLF) can be used in a character string, but they are output
+    as they are in the log output file in the CSV format.
+
+
+
+
+                                           3-9
+                             3.5 Measurement Setting Section
+
+
+
+3.5.4 Sweep
+With the sweep, set the parameters necessary for the sweep measurement.
+        See “4.2 Sweep measurement” (p.4-4)
+
+
+
+
+                                   Figure 3-9 Sweep
+
+ a) Type
+    Select “Linear” or “Log” as the type of sweep measurement.
+
+ b) Start/Stop frequency
+    Set the start/stop frequency of the sweep measurement with the resolution 5 digits
+    (however, resolution mHz (three explicit decimal point) if less than 1Hz).
+    For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+    limitation” (p.3-11).
+
+ c) Measurement points
+    Set the measurement points in the sweep measurement.
+    For the out-of-range input, warning is displayed as described in “3.5.5 Parameter input
+    limitation” (p.3-11).
+
+ d) Log setting
+    To output the measurement result to a log file, check the “Log output” checkbox and set
+    the log output format.
+    If the “Log output” checkbox is unchecked (disabled), the log output function of
+    measurement result is disabled.
+    For the log output function of measurement result, see “4.1.3 Log output” (p.4-2).
+
+ e) Remarks
+    Up to 100 characters can be described as a user’s own memo in remarks field. Note that
+    a comma “,” and line feed (CRLF) can be used in a character string, but they are output
+    as they are in the log output file in the CSV format.
+
+
+
+                                           3-10             ZM2371/ZM2372/ZM2376
+                             3.5 Measurement Setting Section
+
+
+
+3.5.5 Parameter input limitation
+ For the input of numeric value in the measurement parameters, a settable range is limited.
+
+
+ If other than numeric value is entered, or if the out-of-range value is entered, the warning
+ screen as shown below is displayed and the setting is returned to the value set previously.
+
+
+
+
+                  Figure 3-10 Parameter input range warning display
+
+
+ For the input limited values of respective parameters, see “5.2 List of Input Limited Values”
+ (p.5-2).
+
+
+
+
+                                             3-11
+                              3.6 Operation Button Section
+
+
+
+3.6 Operation Button Section
+Each operation button in the operation button block corresponds to the item having same
+name in the [Operation] menu.
+Each button in the operation button section is switched between active and inactive
+according to the [measurement status] of this software.
+For details, see “3.8 Functional Limitations According to Measurement Status” (p.3-14).
+
+
+
+
+                         Figure 3-11 Operation button section
+
+
+3.6.1 Measurement operations
+Select the measurement operation buttons to start or stop the spot measurement or sweep
+measurement.
+For details of each measurement, see the following:
+         See “4.1 Spot Measurement” (p.4-1)
+         See “4.2 Sweep measurement” (p.4-4)
+
+ a) Start
+     Starts the spot measurement or sweep measurement. The [measurement status]
+     becomes “SpotMeasuring” or “SweepMeasuring”. The measurement restarts when
+     [measurement status] is “Pausing”.
+
+ b) Stop
+     Stops current operation and causes [measurement status] to be “Stand-by”.
+
+ c) Pause
+     Pauses current sweep measurement and causes [measurement status] to be “Pausing”.
+
+
+3.6.2 Measurement setting operations
+ a) Initialization
+         See “4.3 Initialization” (p.4-6)
+
+ b) Upload
+         See “4.4 Upload” (p.4-7)
+
+ c) Download
+         See “4.5 Download” (p.4-8)
+
+
+3.6.3 Option
+ a) Send Macro
+     Opens the command text file that the user described arbitrarily, and sends it to the
+     device.
+         See “4.6 Send Macro” (p.4-9)
+
+
+
+
+                                            3-12          ZM2371/ZM2372/ZM2376
+                                      3.7 Status Bar
+
+
+
+3.7 Status Bar
+On the status bar, the log output file name is displayed when [measurement status] is
+“Measuring”, or “Pausing” and also the log output of measurement result is enabled. If the
+log output of measurement result is disabled, nothing is displayed in the position where the
+file name is displayed.
+
+
+Also, when the measurement processing completed and [measurement status] becomes
+“Stand-by”, the display of log output file name is cleared.
+         See “4.1.3 Log output” (p.4-2)
+
+
+
+
+                                 Figure 3-12 Status bar
+
+
+
+
+                                            3-13
+                        3.8 Functional Limitations According to Measurement Status
+
+
+
+ 3.8 Functional Limitations According to Measurement
+     Status
+
+               Table 3-2 Functional limitations according to measurement status
+                                                                   Measurement statuses
+Classifi-
+                        Items             Stand-   Spot        Sweep    Up        Down      Macro
+cation                                                                                              Pausing
+                                          by       Measuring   Measuringloading   loading   Proc
+Menu        File         Open                ○        ×           ×        ×         ×         ×      ×
+
+                         Save               ○         ○           ○         ○        ○        ○       ○
+
+                         Save As            ○         ○           ○         ○        ○        ○       ○
+                         Exit               ○         ○           ○         ○        ○        ○       ○
+
+            Operation    Start              ○         ×           ×         ×        ×        ×       ○
+
+                         Stop               ×         ○           ○         ○        ○        ○       ○
+
+                         Pause              ×         ×           ○         ×        ×        ×       ×
+
+                         Send Macro         ○         ×           ×         ×        ×        ×       ×
+
+                         Initialization     ○         ×           ×         ×        ×        ×       ×
+
+                         Upload             ○         ×           ×         ×        ×        ×       ×
+
+                         Download           ○         ×           ×         ×        ×        ×       ×
+
+            View         Display            ○         ○           ○         ○        ○        ○       ○
+                         setting
+                         Measurement        ○         ○           ○         ○        ○        ○       ○
+                         setting
+                         Spot               ○         ○           ○         ○        ○        ○       ○
+                         measurement
+                         Sweep              ○         ○           ○         ○        ○        ○       ○
+                         measurement
+            Setting      Configuration      ○         ×           ×         ×        ×        ×       ×
+
+            Help         Online Help        ○         ○           ○         ○        ○        ○       ○
+
+                       Version              ○         ○           ○         ○        ○        ○       ○
+                       Information
+Operation Send Macro                        ○         ×           ×         ×        ×        ×       ×
+buttons
+          Initialization                    ○         ×           ×         ×        ×        ×       ×
+          Upload                            ○         ×           ×         ×        ×        ×       ×
+          Download                          ○         ×           ×         ×        ×        ×       ×
+          Start                             ○         ×           ×         ×        ×        ×       ○
+          Stop                              ×         ○           ○         ○        ○        ×       ○
+          Pause                             ×         ×           ○         ×        ×        ×       ×
+
+
+
+
+                                                          3-14             ZM2371/ZM2372/ZM2376
+    4. OPERATION
+
+
+4.1 Spot Measurement ......................................................... 4-1
+   4.1.1 Start operation ......................................................... 4-1
+   4.1.2 Stop operation ......................................................... 4-1
+   4.1.3 Log output................................................................ 4-2
+   4.1.4 Log file format .......................................................... 4-3
+4.2 Sweep Measurement ...................................................... 4-4
+   4.2.1 Start operation ......................................................... 4-4
+   4.2.2 Stop operation ......................................................... 4-4
+   4.2.3 Pause operation ...................................................... 4-4
+   4.2.4 Log output................................................................ 4-4
+   4.2.5 Log file format .......................................................... 4-5
+4.3 Initialization ..................................................................... 4-6
+4.4 Upload ............................................................................ 4-7
+4.5 Download ........................................................................ 4-8
+4.6 Sending Macro ................................................................ 4-9
+   4.6.1 Operation ................................................................. 4-9
+   4.6.2 File format ............................................................. 4-10
+4.7 Operation Stop Due to Drive Error or
+     Communication Error ..................................................... 4-11
+   4.7.1 Error due to unmeasurable status of device ........... 4-11
+   4.7.2 Error due to faulty communication with device ....... 4-11
+4.8 Parameter Setting File .................................................. 4-12
+   4.8.1 Reading a file ........................................................ 4-12
+   4.8.2 Saving a file ........................................................... 4-12
+4.9 Configuration ................................................................ 4-13
+   4.9.1 Communication setting .......................................... 4-13
+   4.9.2 Log output.............................................................. 4-14
+
+
+
+
+                         4-0                ZM2371/ZM2372/ZM2376
+                                    4.1 Spot Measurement
+
+
+
+4.1 Spot Measurement
+
+4.1.1 Start operation
+ When [measurement status] of this software is “Stand-by”, if the Spot is displayed,
+ [Operation (O)] – [Start (S)] menu and the Start button in the operation button section
+ become active, and you can select either way to start the spot measurement.
+          See “3.8 Functional Limitations According to Measurement Status” (p.3-14)
+
+
+ After you selected the start, the software establishes communication with the device and
+ acquires the parameter information set to the device. In such a case, if an event that the
+ device does not accept the communication (warning status on the device side) or an error
+ that, for instance, the communication with device is interrupted occurs, the warning screen
+ is displayed and the measurement cannot be continued.
+          See “4.7 Operation Stop Due to Drive Error or Communication Error” (p.4-11)
+
+
+ If [Log output] is checked (enabled) before the measurement starts, the measurement
+ settings are output to the log file by specifying the log output file. After that, the
+ measurement results acquired from the device are output to the specified file as needed.
+ For details, see”4.1.3 Log output” (p.4-2).
+
+
+
+4.1.2 Stop operation
+ To stop the ongoing spot measurement, click the Stop button ([Operation (O)] – [Stop (E)]
+ or Alt , O , T ).
+
+
+
+
+                                               4-1
+                                      4.1 Spot Measurement
+
+
+
+4.1.3 Log output
+To execute the log output, check the [Log output] (enabled) in “3.5.3 Spot” (p.3-9) and select
+from [Format] the file format to be output.
+
+
+By specifying the log output target file at the start of measurement, the measurement
+settings and measurement results can be output to the log file. The specified log output file
+path is displayed on the status bar at the bottom of main screen.
+
+
+If the log output of measurement settings or measurement results failed by any reason, the
+warning screen appears and the measurement processing stops.
+
+
+
+Depending on the setting of [Format], the file specified at the start of measurement and the
+log output operation are different.
+
+ a) CSV format
+     The measurement settings and measurement results are saved in a file in the CSV
+     format (file extension: ∗.CSV).
+     At the start of measurement, display the [Save As] dialog, and specify the log output
+     target file and click the OK button, so that the log data are output to the specified file
+     (created).
+
+ b) XLS format
+     Start the file in the Microsoft Excel format (file extension: ∗.xls), so that the
+     measurement settings and measurement results are output according to the cell
+     setting of the specified file.
+     Also, if [∗.XLS] is selected as the format, before starting the measurement, specify
+     [Sheet name], [Starting Cell row], and [Starting Cell column] by referring to “4.9
+     Configuration” (p.4-13).
+
+
+At the start of measurement, display the [File Open] dialog, and select the log output file
+and click the OK button, so that the Microsoft Excel starts and the log data are output to
+the specified cell.
+
+
+
+
+                                               4-2           ZM2371/ZM2372/ZM2376
+                                              4.1 Spot Measurement
+
+
+4.1.4 Log file format
+ The log file format of the spot measurement is as listed below.
+ At the output to the XLS file, the log data are output in the following format with the base
+ point located in the cell described to [Starting Cell row] and [Starting Cell column] in “4.9
+ Configuration” (p.4-13).
+
+
+                              Table 4-1 Spot measurement log file format
+          Major              Minor             Item
+    Row   category           category                                Set value (column 4)
+          (column 1)         (column 2)        (column 3)
+     1    [MeasureSetting]
+     2    Display          Primary             Label                 Up to 16-character text
+     3                     parameter           Type                  "Z|Y|R|Rp|Rs|G|C|Cp|Cs|L|Lp|Ls|REAL|MLIN"
+     4                                         Deviation display     "ABS|DEV|PCNT"
+     5                                         Deviation             0, ±(1.00000E-16 to 9.99999E+11)
+                                               reference value
+     6                       Secondary         Label                 Up to 16-character text
+                             parameter
+     7                                         Type                  "Q|D|Phase|X|B|Rs|Rp|G|Lp|Rdc|IMAG|
+                                                                     REAL"
+     8                                         Deviation display     "ABS|DEV|PCNT"
+     9                                         Deviation             0, ±(1.00000E-16 to 9.99999E+11)
+                                               reference value
+    10    Measurement        Frequency         Frequency             *
+    11                       Signal level      ALC                   "OFF|CV|CC"
+    12                                         Constant voltage      0.010 to 5.00
+                                               level
+    13                                         Constant current      0.001 to 200.000
+                                               level
+    14                       Range             Auto ranging          "ON|OFF"
+    15                                         Measurement           "100mOhm|1Ohm|10Ohm|100Ohm|1kOhm|10kOhm|100k
+                                               range                 Ohm|1MOhm"
+    16                       Trigger           Trigger source        "Internal|Manual|External|BUS"
+    17                                         Trigger delay         *
+                                               time
+    18                       Measurement       Measurement           "Rapid|FAST|MED|SLOW|VerySLOW"
+                             speed             speed
+    19                       DC bias           Enable                "ON|OFF"
+    20                                         Setting               *
+    21                       Averaging         Enable                "ON|OFF"
+    22                                         Averaging count       1 to 256
+    23    Remarks            Remarks           Remarks               Up to 100-character text
+    24    ― (Blank row)
+          Item (column 1)                                            Set value (column 2)
+    25    [SpotSetting]
+    26    Repeat count                                               1 to 10000
+    27    Interval                                                   0.5 to 100.0
+    28    Remarks                                                    Up to 100-character text
+    29    ― (Blank row)
+          Index (column 1)         Elapsed time (column 2)           Measurement result (column 3 and later)
+    30    [Spot Result]
+    31    No.                      Elapsed time                      Result
+    32    1                        YYYY/MM/DD hh:mm:ss.xxx           Measurement result (first time))
+    …     ・・・
+     n    n                        YYYY/MM/DD hh:mm:ss.xxx           Measurement result (nth time)
+
+
+
+    * Depends on the model
+                                ZM2371/ZM2372                      ZM2376
+     Frequency                  0.001 ～ 100.000E+3                 0.001 ～ 5.50000E+6
+     Trigger delay time         0.000 ～ 999.999                    0.0000 ～ 999.9999
+     DC bias setting            0.00 ～ 2.50                        0.000 ～ 5.000
+
+
+
+
+                                                              4-3
+                                   4.2 Sweep Measurement
+
+
+
+4.2 Sweep Measurement
+
+4.2.1 Start operation
+ When [measurement status] of this software is “Stand-by”, if the Sweep is displayed,
+ [Operation (O)] – [Start (S)] menu and the Start button in the operation button section
+ become active, and you can select either way to start the sweep measurement.
+          See “3.8 Functional Limitations According to Measurement Status” (p.3-14)
+
+
+ After you selected the start, the software establishes communication with the device and
+ acquires the parameter information set to the device. In such a case, if an event that the
+ device does not accept the communication (warning status on the device side) or an error
+ that, for instance, the communication with device is interrupted occurs, the warning screen
+ is displayed and the measurement cannot be continued.
+          See “4.7 Operation Stop Due to Drive Error or Communication Error” (p.4-11)
+
+
+ If [Log output] is checked (enabled) before the measurement starts, the measurement
+ settings are output to the log file by specifying the log output file. After that, the
+ measurement results acquired from the device are output to the specified file as needed. For
+ details, see”4.1.3 Log output” (p.4-2).
+
+
+
+4.2.2 Stop operation
+ To stop the sweep measurement which is under way or in pause status, click the
+ Stop button ([Operation (O)] – [Stop (E)] or Alt , O , T ). ([Measurement status] becomes
+ “Stand-by”)
+ After the measurement stopped, the measurement cannot restart from the stop point, To
+ restart the measurement, execute the measurement stop processing from the [Pause]
+ processing.
+
+
+
+4.2.3 Pause operation
+ To pause the ongoing sweep measurement, click the Pause button ([Operation (O)] –
+ [Pause (P)] or Alt , O , P ). ([Measurement status] becomes “Pausing”)
+
+
+ To restart the measurement from the pause status, select [Start] operation. To stop the
+ measurement, perform [Stop] operation.
+
+
+
+4.2.4 Log output
+ In the sweep measurement, the log output can be executed same as spot measurement.
+          See “4.1.3 Log output” (p.4-2)
+
+
+
+
+                                               4-4           ZM2371/ZM2372/ZM2376
+                                                     4.2 Sweep Measurement
+
+
+4.2.5 Log file format
+ The “CSV format” log output file format of the sweep measurement is as listed below.
+ In the case of “XLS format”, the log data are output with the base point located in the cell
+ described to [Sheet name], [Starting Cell row] and [Starting Cell column] in “4.9
+ Configuration” (p.4-13), similarly to CSV format.
+
+
+                                Table 4-2 Sweep measurement log file format
+        Major             Minor               Item
+Row     category          category                                 Set value (column 4)
+        (column 1)        (column 2)          (column 3)
+  1     [MeasureSetting]
+  2     Display           Primary             Label                Up to 16-character text
+  3                       parameter           Type                 "Z|Y|R|Rp|Rs|G|C|Cp|Cs|L|Lp|Ls|REAL|MLIN"
+  4                                           Deviation display    "ABS|DEV|PCNT"
+  5                                           Deviation            0, ±(1.00000E-16 to 9.99999E+11)
+                                              reference value
+  6                       Secondary           Label                Up to 16-character text
+                          parameter
+  7                                           Type                 "Q|D|Phase|X|B|Rs|Rp|G|Lp|Rdc|IMAG|REAL"
+  8                                           Deviation display    "ABS|DEV|PCNT"
+  9                                           Deviation            0, ±(1.00000E-16 to 9.99999E+11)
+                                              reference value
+ 10     Measurement       Frequency           Frequency            *
+ 11                       Signal level        ALC                  "OFF|CV|CC"
+ 12                                           Constant voltage     0.010 to 5.00
+                                              level
+ 13                                           Constant current     0.001 to 200.000
+                                              level
+ 14                       Range               Auto ranging         "ON|OFF"
+ 15                                           Measurement          "100mOhm|1Ohm|10Ohm|100Ohm|1kOhm|10kOhm|100kOhm|1M
+                                              range                Ohm"
+ 16                       Trigger             Trigger source       "Internal|Manual|External|BUS"
+ 17                                           Trigger delay time   *
+ 18                       Measurement         Measurement          "Rapid|FAST|MED|SLOW|VerySLOW"
+                          speed               speed
+ 19                       DC bias             Enable               "ON|OFF"
+ 20                                           Setting              *
+ 21                       Averaging           Enable               "ON|OFF"
+ 22                                           Averaging count      1 to 256
+ 23     Remarks           Remarks             Remarks              Up to 100-character text
+ 24     ― (Blank row)
+        Item (column 1)                                            Set value (column 2)
+ 25     [SweepSetting]
+ 26     Type                                                       "Linear|Log"
+ 27     Start frequency                                            0.001 to 100.000E+3
+ 28     Stop frequency                                             0.001 to 100.000E+3
+ 29     Measurement points                                         1 to 10000
+ 30     Remarks                                                    Up to 100-character text
+ 31     ― (Blank row)
+                                                                   Measurement
+        Index (column 1)            Elapsed time (column 2)                                   Measurement result (column 4)
+                                                                   frequency (column 3)
+ 32     [Sweep Result]
+ 33     No.                         Elapsed time                   Frequency                  Result
+ 34     1                           YYYY/MM/DD hh:mm:ss.xxx
+                                                                   Measurement
+                                                                                              Measurement result (first time)
+                                                                   frequency (first time)
+ …       ・・・
+                                                                   Measurement
+  n     n                           YYYY/MM/DD hh:mm:ss.xxx
+                                                                   frequency (nth time)
+                                                                                              Measurement result (nth time)
+
+
+      * Depends on the model
+                                      ZM2371/ZM2372                    ZM2376
+       Frequency                      0.001 ～ 100.000E+3               0.001 ～ 5.50000E+6
+       Trigger delay time             0.000 ～ 999.999                  0.0000 ～ 999.9999
+       DC bias setting                0.00 ～ 2.50                      0.000 ～ 5.000
+
+
+
+
+                                                                   4-5
+                                      4.3 Initialization
+
+
+
+4.3 Initialization
+The device is initialized (reset). Current settings and correction values are reset to initial
+values.
+Also, the warning status of device is cleared.
+
+
+For details of errors during initialization, see “4.7 Operation Stop Due to Device Error or
+Communication Error” (p.4-11).
+
+
+
+
+                                              4-6          ZM2371/ZM2372/ZM2376
+                                       4.4 Upload
+
+
+
+4.4 Upload
+Various parameters currently set on the software are set to the device.
+
+
+For details of errors during upload, see “4.7 Operation Stop Due to Device Error or
+Communication Error” (p.4-11).
+
+
+
+
+                                            4-7
+                                      4.5 Download
+
+
+
+4.5 Download
+Various parameters currently set to the device are acquired, and the display is updated with
+the acquired parameters.
+
+
+For details of errors during download, see “4.7 Operation Stop Due to Device Error or
+Communication Error” (p.4-11).
+
+
+
+
+                                            4-8          ZM2371/ZM2372/ZM2376
+                                       4.6 Sending Macro
+
+
+
+4.6 Sending Macro
+By using the macro sending function, this software can send the command that the user
+described arbitrarily to the device.
+Select Send Macro button ( Alt , O , M ) to display the [File Open] dialog. Select the text
+file in which the macro command is described, and select OK , and the Sending Macro
+screen as shown below will appear.
+When the macro screen is displayed, the operation of main screen is disabled.
+
+
+
+
+                           Figure 4-1 Sending Macro screen
+
+
+On the Sending Macro screen, the information read from the macro sending file is displayed
+in the [Macro sending commands] list, and the macro commands are sent to the device
+sequentially, starting from the first line. Currently sent macro command is highlighted.
+In case of a warning on the device side or a communication error during the macro sending,
+the warning screen is displayed and the macro sending processing is interrupted. Check the
+warning on the device side and also check the macro command.
+
+
+
+4.6.1 Operation
+ a) Retry
+     Macro sending starts automatically, and it stops automatically when the command on
+     the final line was sent. To send the macro commands again from the fist line, click the
+      Retry button.
+     During the macro sending, the       Retry button becomes inactive and it cannot be
+     selected.
+
+ b) Stop
+     To interrupt the ongoing macro sending, click the Stop button. If the macro sending
+     has already been finished, the Stop button becomes inactive and it cannot be selected.
+
+ c) Close
+     To exit the Sending Macro screen, click the Close button. The Sending Macro screen
+     is closed, and the main screen can be operated.
+
+
+
+
+                                               4-9
+                                      4.6 Sending Macro
+
+
+
+4.6.2 File format
+ When describing macro commands in the macro file, take care of the following points:
+
+
+  The first line of the file is a header, and it must be the following definite character string.
+    “[ZM237x Application Software Macro Data File, Ver.1.00]”
+  The macro command must begin with a colon ( : ). The line which does not begin with a
+    colon ( : ) is all recognized as a comment and it is ignored.
+  The command that contains a query character ( ? ) is not sent as a command.
+  The file extension must be “zmm”.
+
+
+
+            [ZM237x Application Software Macro Data File,Ver.1.00]
+            :CAL:CABL 1
+            :DISP:TEXT3 MON
+
+
+
+
+                        Figure 4-2 Macro file description example
+
+
+
+
+                                               4-10          ZM2371/ZM2372/ZM2376
+               4.7 Operation Stop Due to Drive Error or Communication Error
+
+
+
+4.7 Operation Stop Due to Drive Error or Communication
+    Error
+When the software communicates with the device using the communicating function, an
+error message may be displayed.
+
+
+
+4.7.1 Error due to unmeasurable status of device
+The software checks the status of device when it established the communication with the
+device. In such a case, if the device is executing the command processing (standard event
+register: OPC bit = OFF) or it is executing the measurement (operation condition register:
+Measuring bit = ON), an error message is displayed and the processing is interrupted.
+
+
+
+
+         Figure 4-3 Warning display due to unmeasurable status of device
+
+
+
+4.7.2 Error due to faulty communication with device
+If an error is detected in the communication between this software and device, further
+operation is judged impossible, and an error message is displayed and the processing is
+interrupted.
+
+
+
+
+       Figure 4-4 Warning display due to faulty communication with device
+
+
+
+
+                                           4-11
+                                 4.8 Parameter Setting File
+
+
+
+4.8 Parameter Setting File
+ The software can save/read various parameters that the user entered arbitrarily as a
+ parameter setting file. Please note that the data set in “4.9 Configuration” (p.4-13) is not
+ saved. The extension of parameter setting file is “.xml”.
+ The file name used to save/read the parameters is displayed on the title bar.
+
+
+
+4.8.1 Reading a file
+ Operate [File (F)] – [Open (O)] ( Alt , F , O or Ctrl + O ) to display the [File Open] dialog.
+ Specify the file name and click the OK button, and the set values will be read from the
+ specified parameter setting file.
+ If the file reading failed, an error message is displayed and the reading processing is
+ stopped.
+
+
+
+
+                  Figure 4-5 Warning display when file reading failed
+
+
+
+4.8.2 Saving a file
+ Operate [File (F)] – [Save As (A)] ( Alt , F , A ) to display the [Save As] dialog. Specify the
+ file name and click OK button, and the set values will be saved in the specified file name.
+ With the parameter setting file already saved or read, if you operate [File (F)] – [Save (S)]
+ ( Alt , F , S or Ctrl + S ), the existing parameter setting file is overwritten.
+ Or, with the parameter setting file not saved or read yet, if you operate [Save (S)], the same
+ processing as [Save As] operation is executed.
+
+
+
+
+                   Figure 4-6 Warning display when file saving failed
+
+
+
+
+                                              4-12           ZM2371/ZM2372/ZM2376
+                                       4.9 Configuration
+
+
+
+4.9 Configuration
+To display the [Configuration] screen, from the menu bar, select [Setting (S)] –
+[Configuration (C)] ( Alt , S , C ).
+
+
+4.9.1 Communication setting
+ Make a setting for the communication with the device.
+
+
+
+
+           Figure 4-7 Configuration screen (Communication setting tab)
+
+ a) Product name
+     Select the product name to be connected to this software.
+
+ b) Driver type
+     Set the driver type for the communication between this software and device.
+       [USBTMC]     uses NF USBTMC specialized driver.
+       [VISA]       uses USB driver in the VISA environment.
+
+ c) Connected device
+     Select the connected device.
+     Here, set a serial number of the connected device. For the serial number, check it on
+     the model seal on the rear panel of the device, or refer to Instruction Manual.
+
+
+     Also, by clicking the Find button, a list of devices connected to currently used PC is
+     updated. From the updated pull-down list, the device can be selected and set.
+
+
+
+
+                                              4-13
+                                     4.9 Configuration
+
+
+4.9.2 Log output
+Set the output sheet when the log output is executed in the XLS format.
+
+
+
+
+                   Figure 4-8 Configuration screen (Log output tab)
+
+ a) Measurement setting/Measurement result
+     When executing the log output in the XLS format, the measurement setting and the
+     measurement result can be output to different sheets and cells individually. For each of
+     the measurement setting and result, make a setting for log output individually.
+
+ b) Sheet name
+     Specify the sheet name in the XLS file to which the log data are output. If the sheet
+     name is blank or the specified sheet name is not found in the selected file at the log
+     output, the log output cannot be executed, resulting in an error. Beware of the entry.
+
+ c) Starting Cell row
+     Enter a numeric value to specify the row from which the log output starts on the sheet
+     of the specified [sheet name]. The Microsoft Excel specifies that the maximum number
+     of rows is 65536, and therefore 65537 or larger value cannot be entered as the starting
+     cell row. Set the row with sufficient margin for the log output.
+
+ d) Starting Cell column
+     Enter a numeric value to specify the column from which the log output starts on the
+     sheet of the specified [sheet name]. The Microsoft Excel specifies that the maximum
+     number of columns is 256 (0 to 255), and therefore 255 or larger value cannot be
+     entered as the starting cell column. Set the column with sufficient margin for the log
+     output.
+
+
+
+          CAUTION
+The Microsoft Excel 2007 or later version uses the file extension .xlsx and it can handle the
+rows exceeding 65537 and columns exceeding 257, but this software uses the xls file and
+limits the rows to 65536 and columns to 256 to maintain the downward compatibility.
+
+
+
+
+                                             4-14          ZM2371/ZM2372/ZM2376
+5. LIST OF SETTING TABLES
+
+
+    5.1   Initial Setting Value List ................................................. 5-1
+    5.2   List of Input Limited Values ............................................ 5-2
+    5.3   SI Prefix List .................................................................. 5-3
+
+
+
+
+                           5-0                ZM2371/ZM2372/ZM2376
+                           5.1 Initial Setting Value List
+
+
+
+5.1 Initial Setting Value List
+
+                       Table 5-1 Initial Setting Value List
+                              Item names                        Initial value
+       Display       Primary parameter Type          C
+                     Primary parameter Deviation     ABS
+                     display
+                     Primary parameter Deviation
+                                                     0.00000
+                     reference value
+                     Secondary parameter Type        D
+                     Secondary parameter Deviation   ABS
+                     display
+                     Secondary parameter Deviation   0.00000
+                     reference value
+                     Remarks                         Blank
+       Measurement   Frequency [Hz]                  1.0000k
+                     ALC                             OFF
+                     Voltage level [Vrms]            1.00
+                     Constant current level [Arms]   1.00m
+                     Auto ranging                    ON
+                     Measurement range               100 Ohm
+                     Trigger source                  Internal
+                     Trigger delay time [s]          0.008
+                     Measurement speed               MED
+                     DC bias Enable                  OFF
+                     DC bias Setting [V]             0.00
+                     Averaging Enable                OFF
+                     Averaging count                 1
+       Spot          Repeat count                    100
+                     Interval [s]                    1.0
+                     Log output                      OFF
+                     Format                          CSV
+                     Remarks                         Blank
+       Sweep         Type                            Linear
+                     Start frequency [Hz]            1.0000k
+                     Stop frequency [Hz]             10.000k
+                     Measurement points              100
+                     Log output                      OFF
+                     Format                          CSV
+                     Remarks                         Blank
+
+
+
+
+                                           5-1
+                                  5.2 List of Input Limited Values
+
+
+
+5.2 List of Input Limited Values
+
+                             Table 5-2 List of Input Limited Values
+                            Item names                                   Range
+   Display           Primary parameter Type      Z|Y|R|Rp|Rs|G|C|Cp|Cs|L|Lp|Ls|REAL|MLIN
+                     Primary parameter           ABS|DEV|PCNT
+                     Deviation display
+                     Primary parameter           0, ±1E-16 to 9.99999E+11
+                     Deviation reference value   Resolution: 6 digits
+                                                 Engineering unit: [f] to [T]
+                     Secondary parameter         Q|D|Phase|X|B|Rs|Rp|G|Lp|Rdc|IMAG|
+                     Type                        REAL
+                     Secondary parameter         ABS|DEV|PCNT
+                     Deviation display
+                     Secondary parameter         0, ±1E-16 to 9.99999E+11
+                     Deviation reference value   Resolution: 6 digits
+                                                 Engineering unit: [f] to [T]
+                     Remarks                     Maximum 100 characters
+   Measurement       Frequency [Hz]              *
+                     ALC                         OFF|CV|CC
+                     Voltage level [Vrms]        0.01 to 5.00
+                                                 If exceeding 1V, resolution 10mV
+                                                 If less than 1V, resolution 1mV
+                     Constant current level      1.0u to 200mA
+                     [Arms]                      Resolution: 3 digits
+                                                 However, resolution 0.1uArms if less than 100uArms
+                                                 [-] 0.01 to 0.20
+                                                 [m] 0.01 to 200
+                                                 [u] 1.0 to 999
+                     Auto ranging                Enabled/Disabled
+                     Measurement range           100mOhm|1Ohm|10Ohm|100Ohm|1kOhm|10kOhm|1
+                                                 00kOhm|1MOhm
+                     Trigger source              Internal|Manual|External|BUS
+                     Trigger delay time [s]      *
+                     Measurement speed           RAPid|FAST|MED|SLOW|VerySLOW
+                     DC bias Enable              Enabled/Disabled
+                     DC bias Setting [V]         *
+                     Averaging Enable            Enabled/Disabled
+                     Averaging count             1 to 256
+   Spot              Repeat count                1 to 10000
+                     Interval [s]                0.5 to 100.0
+                     Log output                  Enabled/Disabled
+                     Format                      ∗.CSV / ∗.XLS
+                     Remarks                     Maximum 100 characters
+   Sweep             Type                        Linear | Log
+                     Start frequency [Hz]        0.001 to 100E+3
+                     Stop frequency [Hz]         0.001 to 100E+3
+                     Measurement points          1 to 10000
+                     Log output                  Enabled/Disabled
+                     Format                      ∗.CSV / ∗.XLS
+                     Remarks                     Maximum 100 characters
+
+
+  * Depends on the model
+                           ZM2371/ZM2372              ZM2376
+   Frequency               0.001 ～ 100.000E+3         0.001 ～ 5.50000E+6
+                           Resolution 5 digits        Resolution 6 digits
+   Trigger delay time      0.000 ～ 999.999            0.0000 ～ 999.9999
+                           Resolution 0.001           Resolution 0.0001
+   DC bias setting         0.00 ～ 2.50                0.000 ～ 5.000
+                           Resolution 0.01            Resolution 0.001
+
+
+
+
+                                                     5-2             ZM2371/ZM2372/ZM2376
+                              5.3 SI Prefix List
+
+
+
+5.3 SI Prefix List
+
+                           Table 5-3 SI Prefix List
+               SI Prefix      How to read          Ten involution
+                   T             tera                   +12
+                  G              giga                    +9
+                  M             mega                     +6
+                   k              kilo                   +3
+                   --              --                     0
+                  m              milli                   -3
+                   u            micro                    -6
+                   n             nano                    -9
+                   p             pico                   -12
+                    f           femto                   -15
+
+
+
+
+                                      5-3
+6. USER MESSAGES
+
+
+ 6.1   Guidance Messages ...................................................... 6-1
+ 6.2   Error Messages .............................................................. 6-2
+
+
+
+
+                       6-0               ZM2371/ZM2372/ZM2376
+                                    6.1 Guidance Messages
+
+
+
+6.1 Guidance Messages
+                              Table 6-1 Guidance Messages
+Message                           Icon Button    Description
+Exit application. OK?               [？]   [Yes]     Confirmation when the application is
+                                          [No]      terminated.
+If product name is changed,         [!]   [OK]      If the setting range varies depending
+other settings will be within the                   on the target model.
+range of the absolute value.
+Other settings will be within       [!]   [OK]      If you open the file has been selected
+the range of the absolute value.                    models and model is different from the
+                                                    current.
+
+
+
+
+                                              6-1
+                                       6.2 Error Messages
+
+
+
+6.2 Error Messages
+                                    Table 6-2 Error Messages
+Message                               Icon Button    Description
+Please set the numerical value.      [！]    [OK]     Other than numerical value was
+                                                     entered as a numerical value
+                                                     parameter (text box).
+Please set it within the range of    [！]    [OK]     Out-of-range value (numerical value
+{0} - {1}.                                           range) was entered as a numerical
+                                                     value parameter (text box).
+Please set it within the range of    [！]    [OK]     Out-of-range value (±range) was
+the absolute value of                                entered as a numerical value
+0 or {0} - {1}.                                      parameter (text box).
+Device connection failure.           [！]    [OK]     In the device communication
+Please confirm communication                         processing*1, a connection to the
+setting.                                             device failed.
+The device can not measure. not      [！]    [OK]     In the device communication
+to measure it. (Preparing)                           processing*2, the device is not enabled
+                                                     to measure.
+The device can not measure. not      [！]    [OK]     In the device communication
+to measure it. (Measuring)                           processing*3, the device is not enabled
+                                                     to communicate.
+Processing was discontinued          [！]    [OK]     In the spot/sweep measurement
+because of log-output error.                         processing, the log output error
+                                                     occurred when the log output is
+                                                     enabled.
+Processing was discontinued          [！]    [OK]     In the spot/sweep measurement
+because of data fetch error.                         processing, the status bit check after a
+                                                     trigger was requested is not completed
+                                                     within the specified time.
+Processing was discontinued          [！]    [OK]     In the device communication
+because of communication error.                      processing*1, a communication error
+                                                     occurred.
+File read error.                     [！]    [OK]     In the file*4 reading processing, an
+                                                     error (file open/access error) occurred.
+File save error.                     [！]    [OK]     In the file*4 saving processing, an
+                                                     error (file open/access error) occurred.
+The specified file doesn't exist.    [！]    [OK]     In the file*4 reading processing, the
+                                                     specified file does not exist.
+The file format is illegal.          [！]    [OK]     In the file*4 reading processing, the
+Please confirm the file format.                      read file information is illegal or file
+                                                     format is illegal.
+  *1 Initialization, upload, download, send macro, spot measurement, sweep measurement
+
+  *2 In the processing of *1 except initialization, the command processing is under way (OPC
+      bit OFF)
+
+  *3 In the processing of *1 except initialization, the device is in measurement status.
+
+  *4 Measurement parameter setting file, macro sending file, configuration file maintenance
+
+
+
+
+                                               6-2          ZM2371/ZM2372/ZM2376
+7. MAINTENANCE
+
+
+7.1   Version Check ................................................................ 7-1
+
+
+
+
+                       7-0               ZM2371/ZM2372/ZM2376
+                                   7.1 Version Check
+
+
+
+7.1 Version Check
+The “ZM237xApplication Software’’ version number is displayed on the CD-ROM.
+The version can be displayed by selecting [Help]-[Version Information].
+
+
+
+
+                            Figure 7-1 Version Dialog Box
+
+
+
+
+                                           7-1
+     IMPORTANT
+1.    Reproduction of the program or this instruction manual either in part or in whole, is
+      strictly prohibited.
+2.    The contents of this instruction manual are subject to change without notice.
+3.    Although great care has been taken to ensure the accuracy and completeness of the
+      information contained in this user’s manual, please notify NF Corporation or an NF
+      Corporation sales representative in case any unclear points, errors, or omissions are
+      found.
+4.    NF Corporation shall not be held responsible for any errors, defects, lost profits, or
+      other consequential damages arising from the use of this products, regardless of
+      item 3.
+
+                                   ZM2371/ZM2372/ZM2376
+                    Application Software Instruction Manual
+                   NF Corporation
+                   6-3-20 Tsunashima Higashi, Kohoku-ku, Yokohama
+                   223-8508, JAPAN
+                                     Phone: +81-45-545-8111
+                                      http://www.nfcorp.co.jp/
+
+                         C Copyright 2009-2018, NF Corporation
+                         ◯ E
+                               A
+http://www.nfcorp.co.jp/                                          NF Corporation
+                           6-3-20 Tsunashima Higashi, Kohoku-ku, Yokohama 223-8508 JAPAN
+

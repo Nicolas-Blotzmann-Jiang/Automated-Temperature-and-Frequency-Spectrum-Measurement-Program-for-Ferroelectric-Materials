@@ -1,0 +1,35 @@
+{
+  "visa_resources": [
+    "ASRL3::INSTR",
+    "ASRL4::INSTR",
+    "ASRL5::INSTR",
+    "ASRL6::INSTR"
+  ],
+  "visa_idn": [
+    {
+      "resource": "ASRL3::INSTR",
+      "idn": null,
+      "error": "SerialException(\"could not open port 'COM3': PermissionError(13, '拒绝访问。', None, 5)\")"
+    },
+    {
+      "resource": "ASRL4::INSTR",
+      "idn": null,
+      "error": "VisaIOError('VI_ERROR_TMO (-1073807339): Timeout expired before operation completed.')"
+    },
+    {
+      "resource": "ASRL5::INSTR",
+      "idn": null,
+      "error": "VisaIOError('VI_ERROR_TMO (-1073807339): Timeout expired before operation completed.')"
+    },
+    {
+      "resource": "ASRL6::INSTR",
+      "idn": null,
+      "error": "SerialException(\"could not open port 'COM6': OSError(22, '信号灯超时时间已到', None, 121)\")"
+    }
+  ],
+  "classified": {
+    "DP800": [],
+    "LCR": []
+  },
+  "errors": []
+}
